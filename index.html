@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Çağatay - Kişisel Web Sitesi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        section {
+            padding: 40px 0;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .about-me {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .education, .experience, .skills, .projects {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 25px;
+        }
+        
+        .education-item h3, .experience-item h3, .project-item h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .education-date, .experience-date, .project-date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .skills-category {
+            flex: 0 0 48%;
+        }
+        
+        .skills-category h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .skills-list {
+            list-style: none;
+        }
+        
+        .skills-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .skills-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+        }
+        
+        .social-links a {
+            color: #fff;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        .view-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .view-more:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+            
+            .skills-category {
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Mert Çağatay</h1>
+                <div class="contact-info">
+                    <p>mertcagatay4@gmail.com | +90 539 765 9482</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mert-cagatay-293b711b8/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Mert13Cagatay" target="_blank">GitHub</a>
+                        <a href="https://medium.com/@mertcagatay4" target="_blank">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#education">Eğitim</a></li>
+                <li><a href="#experience">Deneyim</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <div class="about-me">
+                <h2 class="section-title">Hakkımda</h2>
+                <p>Disiplinli ve detay odaklı bir birey olarak, araştırma ve planlama konularında güçlü bir tutkuya sahibim. Merakım her projeyi derinden keşfetmeme olanak sağlarken, analitik düşünce yapım verimli çözümler geliştirmeme yardımcı oluyor. Bu özellikleri birleştirerek, yapılandırılmış problem çözme ve yenilikçi düşünmenin önemli olduğu ortamlarda başarılı oluyorum.</p>
+            </div>
+        </section>
+        
+        <section id="education">
+            <div class="education">
+                <h2 class="section-title">Eğitim</h2>
+
+                <div class="education-item">
+                    <h3>University of Angers - School Polytechnic Of L'université D'angers</h3>
+                    <p class="education-date">01/2025 - 06/2025</p>
+                    <p>Quality, Innovation, and Feasability</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>İstanbul Teknik Üniversitesi</h3>
+                    <p class="education-date">2022 - Devam Ediyor</p>
+                    <p>Endüstri Mühendisliği</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>İstanbul Teknik Üniversitesi</h3>
+                    <p class="education-date">2020 - 2022</p>
+                    <p>Elektronik ve Haberleşme Mühendisliği</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Antalya Koleji Lisesi</h3>
+                    <p class="education-date">2016 - 2020</p>
+                    <p>Diploma Notu: 97.8/100</p>
+                    <p>2020 YKS'de 2.5 milyon öğrenci arasında 4207. sıra</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <div class="experience">
+                <h2 class="section-title">Deneyim</h2>
+                
+                <div class="experience-item">
+                    <h3>Tedarik Zinciri Stajyeri</h3>
+                    <p>Haleon/GSK-Consumer Health</p>
+                    <p class="experience-date">Ocak 2024 - Aralık 2024</p>
+                    <p>Haleon, Sensodyne, Parodontax, Otrivin, Panadol ve Voltaren gibi tanınmış markaları ile günlük sağlığı geliştiren reçetesiz ilaç ürünlerinde uzmanlaşmış, tüketici sağlık hizmetlerinde global bir liderdir.</p>
+                    <p><strong>Sorumluluklarım:</strong></p>
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                        <li>SAP işlemlerini kullanarak stok birimlerini takip etmek</li>
+                        <li>Talep inceleme toplantıları öncesinde ilgili dosyaları güncellemek</li>
+                        <li>Toplantılar öncesinde numune ve promosyon gerçekleştirmelerini güncellemek</li>
+                        <li>Satış Tahminlerini ihlal eden SKU tahminlerinin belirlenmesi</li>
+                        <li>Satış, pazarlama ve kalite gibi ihtiyaç duyan departmanlara yardımcı olmak</li>
+                    </ul>
+                    <a href="experience-details.html" class="view-more">Daha fazla bilgi →</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="skills">
+                <h2 class="section-title">Yetenekler</h2>
+                
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Teknik Yetenekler</h3>
+                        <ul class="skills-list">
+                            <li>Python - Orta Seviye</li>
+                            <li>MS Office - İleri Seviye</li>
+                            <li>SAP</li>
+                            <li>Autocad</li>
+                            <li>HTML - Orta Seviye</li>
+                            <li>CSS - Orta Seviye</li>
+                            <li>C# - Başlangıç</li>
+                            <li>R - Başlangıç</li>
+                            <li>SQL - Başlangıç</li>
+                            <li>Ses ve Video Düzenleme - Audacity, iMovie, Camtasia Studio, Canva</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Dil Becerileri</h3>
+                        <ul class="skills-list">
+                            <li>İngilizce - B2</li>
+                            <li>Fransızca - A1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="projects">
+                <h2 class="section-title">Projeler ve Gönüllü Faaliyetler</h2>
+                
+                <div class="project-item">
+                    <h3>NextGenSportsFacilities Projesi</h3>
+                    <p class="project-date">Mart 2024 - Haziran 2024</p>
+                    <p><strong>Katılımcı Öğrenci</strong></p>
+                    <p>Hollanda, Portekiz ve Türkiye'den eğitim kurumlarını içeren Erasmus+ finansmanlı bir girişim olan NextGenSportsFacilities projesine katıldım. Yenilikçi spor tesislerinin geliştirilmesi ve işletilmesindeki karmaşık zorlukları ele almak için Tasarım Düşüncesi metodolojisini kullanmak üzere farklı geçmişlerden gelen öğrenciler ve profesyonellerle işbirliği yaptım. Avrupa'daki spor altyapısının geleceğini geliştiren sürdürülebilir ve ileriye dönük çözümlerin oluşturulmasına katkıda bulundum.</p>
+                    <a href="next-gen-project.html" class="view-more">Proje detayları →</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>İTÜ Girişim Podcast</h3>
+                    <p class="project-date">Eylül 2022 - Ağustos 2023</p>
+                    <p><strong>Podcast Koordinatörü</strong></p>
+                    <p>Türkiye'nin en büyük girişimcilik kulübünün podcast yayınlarının planlanmasından yayınlanmasına kadar sorumlu koordinatörüydüm. Türkiye'nin en büyük girişimcilik kulüplerinden biri olan İTÜ Girişimcilik Topluluğu, bu podcast'te girişimcileri, yatırımcıları ve ekosistemin önde gelen isimlerini ağırlayarak hikayelerini dinliyor. Bu süreçte, bölüm hazırlığı, çekim ve düzenleme gibi tüm süreçleri yönettim.</p>
+                    <p><a href="https://open.spotify.com/show/29LxltuzL2iob2wvqD5q5E?si=26ce07b985954974" target="_blank">Spotify'da dinleyin</a></p>
+                    <a href="podcast-details.html" class="view-more">Daha fazla bilgi →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mert Çağatay. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>

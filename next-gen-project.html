@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Çağatay - NextGenSportsFacilities Proje Detayları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .back-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+        
+        .project-details {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+        
+        .project-details h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .project-details h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .project-details p {
+            margin-bottom: 15px;
+        }
+        
+        .project-details ul, .project-details ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .project-details li {
+            margin-bottom: 8px;
+        }
+        
+        .project-details img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-content h4 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 4px solid #3498db;
+            border-radius: 50%;
+            top: 15px;
+            right: -12px;
+            z-index: 1;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .project-details {
+                padding: 20px;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 19px;
+            }
+            
+            .left {
+                left: 0;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>NextGenSportsFacilities Projesi</h1>
+                <p>Erasmus+ Projesi Deneyimim</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="experience-details.html">Staj Deneyimim</a></li>
+                <li><a href="podcast-details.html">Podcast Detayları</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="project-details">
+            <a href="index.html" class="back-button">← Ana Sayfaya Dön</a>
+            
+            <h2>NextGenSportsFacilities Projesi</h2>
+            <p><strong>Dönem:</strong> Mart 2024 - Haziran 2024</p>
+            <p><strong>Pozisyon:</strong> Katılımcı Öğrenci</p>
+            
+            <h3>Proje Hakkında</h3>
+            <p>NextGenSportsFacilities, Erasmus+ programı tarafından finanse edilen ve Hollanda, Portekiz ve Türkiye'den eğitim kurumlarını bir araya getiren uluslararası bir projedir. Projenin amacı, yenilikçi spor tesislerinin geliştirilmesi ve işletilmesindeki karmaşık zorlukları ele almak için Tasarım Düşüncesi metodolojisini kullanmaktır.</p>
+            
+            <p>Bu proje, sürdürülebilir ve geleceğe dönük spor altyapı çözümleri oluşturmak için farklı disiplinlerden öğrencileri ve profesyonelleri bir araya getirmiştir. Katılımcılar olarak, spor tesislerinin tasarımında ve işletilmesinde karşılaşılan zorlukları belirledik ve bunlara yönelik yenilikçi çözümler geliştirdik.</p>
+            
+            <h3>Proje Ortakları</h3>
+            <ul>
+                <li><strong>Hollanda:</strong> Breda University of Applied Sciences (BUAS)</li>
+                <li><strong>Portekiz:</strong> Instituto Politécnico de Beja</li>
+                <li><strong>Türkiye:</strong> İstanbul Teknik Üniversitesi</li>
+            </ul>
+            
+            <h3>Tasarım Düşüncesi Metodolojisi</h3>
+            <p>Projede, spor tesisleri tasarımı ve yönetimi konusundaki karmaşık zorlukları ele almak için Tasarım Düşüncesi (Design Thinking) metodolojisini kullandık. Bu metodoloji, beş temel aşamadan oluşur:</p>
+            
+            <ol>
+                <li><strong>Empati Kurma (Empathize):</strong> Kullanıcıların ihtiyaçlarını ve beklentilerini anlamak için araştırma ve görüşmeler yaptık.</li>
+                <li><strong>Tanımlama (Define):</strong> Elde ettiğimiz bilgilere dayanarak sorunları tanımladık ve çözülmesi gereken belirli zorlukları belirledik.</li>
+                <li><strong>Fikir Üretme (Ideate):</strong> Beyin fırtınası ve yaratıcı düşünme teknikleri kullanarak çözüm önerileri geliştirdik.</li>
+                <li><strong>Prototip Oluşturma (Prototype):</strong> Önerilen çözümlerin düşük maliyetli modelleri ve prototiplerini oluşturduk.</li>
+                <li><strong>Test Etme (Test):</strong> Prototipleri test ederek geri bildirim topladık ve çözümleri iyileştirdik.</li>
+            </ol>
+            
+            <h3>Proje Zaman Çizelgesi</h3>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h4>Mart 2024</h4>
+                        <p>Proje başlangıcı ve ekiplerin oluşturulması. Literatür taraması ve araştırma başlangıcı.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h4>Nisan 2024</h4>
+                        <p>Saha araştırması, kullanıcı görüşmeleri ve sorun tanımlama aşaması.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h4>Mayıs 2024</h4>
+                        <p>Fikir üretme ve prototip geliştirme aşaması.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h4>Haziran 2024</h4>
+                        <p>Test etme, geri bildirim toplama ve final sunumları.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Katkılarım ve Sorumluluklar</h3>
+            <ul>
+                <li>Türkiye ekibinde aktif bir üye olarak araştırma ve veri analizi süreçlerine katıldım</li>
+                <li>Spor tesislerinin sürdürülebilirlik ve erişilebilirlik yönleri üzerine odaklandım</li>
+                <li>Yerel paydaşlarla görüşmeler düzenleyerek kullanıcı ihtiyaçlarını belirledim</li>
+                <li>Enerji verimliliği ve yenilenebilir enerji kullanımına dayalı çözüm önerileri geliştirdim</li>
+                <li>Geliştirdiğimiz prototiplerin test edilmesi ve değerlendirilmesi aşamalarında yer aldım</li>
+                <li>Final raporunun ve sunumunun hazırlanmasına katkıda bulundum</li>
+            </ul>
+            
+            <h3>Edindiğim Beceriler</h3>
+            <ul>
+                <li>Uluslararası bir ekipte çalışma ve kültürlerarası iletişim</li>
+                <li>Tasarım Düşüncesi metodolojisini uygulama</li>
+                <li>Karmaşık problemleri analiz etme ve çözüm geliştirme</li>
+                <li>Prototip oluşturma ve test etme teknikleri</li>
+                <li>Kullanıcı odaklı tasarım prensipleri</li>
+                <li>Sürdürülebilir ve yenilikçi spor tesisi tasarımı</li>
+                <li>Proje yönetimi ve ekip çalışması</li>
+            </ul>
+            
+            <h3>Proje Çıktıları</h3>
+            <p>Proje sonucunda, sürdürülebilir ve kullanıcı dostu spor tesislerinin tasarlanması için bir dizi öneri ve model geliştirdik. Bunlar arasında:</p>
+            <ul>
+                <li>Enerji verimliliğini maksimize eden akıllı spor tesisi modeli</li>
+                <li>Topluluk katılımını artıran çok amaçlı spor tesisi tasarımı</li>
+                <li>Erişilebilirliği artıran ve herkes için spor imkanı sunan tasarım çözümleri</li>
+                <li>Spor tesislerinin işletme maliyetlerini düşürecek yenilikçi yönetim modelleri</li>
+            </ul>
+            
+            <p>Bu proje, Avrupa'daki spor altyapısının geleceğine katkıda bulunan değerli bir deneyim oldu ve farklı disiplinlerden ve kültürlerden insanlarla işbirliği yapma fırsatı sağladı.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mert Çağatay. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
